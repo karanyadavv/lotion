@@ -27,7 +27,7 @@ export const Menu = ({
 }: MenuProps) => {
 
   const router = useRouter();
-  const user = useUser();
+  const { user } = useUser();
 
   const archive = useMutation(api.documents.archive);
   const onArchive = () => {
