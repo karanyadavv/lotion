@@ -42,17 +42,15 @@ const Editor: React.FC<EditorProps> = ({
   }
 
   const editor: BlockNoteEditor = useCreateBlockNote({
-    // editable,
+    editable,
     initialContent: initialContent ? (JSON.parse(initialContent) as PartialBlock[]) : undefined,
-    // onEditorContentChange: (editor) => {
-    //   onChange(JSON.stringify(editor.topLevelBlocks, null, 2))
-    // },
+    onEditorContentChange: (editor) => {
+      onChange(JSON.stringify(editor.topLevelBlocks, null, 2))
+    },
     uploadFile: handleUpload
   });
 
-  // const handleEditorChange = () => {
-  //   onChange(JSON.stringify(editor.topLevelBlocks, null, 2));
-  // };
+
 
 
   return(
@@ -60,7 +58,7 @@ const Editor: React.FC<EditorProps> = ({
       <BlockNoteView
         editor={editor}
         editable={editable}
-        onChange={() => {}}
+        onChange={onChange}
         theme={resolvedTheme === "dark" ? "dark" : "light"}
       />
     </div>
