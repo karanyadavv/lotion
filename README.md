@@ -1,3 +1,9 @@
+
+
+
+https://github.com/karanyadavv/lotion/assets/128973398/7412974c-6424-414e-8d33-41e0eab52d0a
+
+
 # Lotion
 
 Lotion is a Notion clone, designed to provide users with a collaborative workspace for note-taking, task management, and document organization. Built on top of modern technologies, Lotion aims to replicate the core functionalities of Notion while offering a customizable and scalable solution.
