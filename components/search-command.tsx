@@ -5,7 +5,7 @@ import { useSearch } from "@/hooks/use-search";
 import { useUser } from "@clerk/clerk-react";
 import { useQuery } from "convex/react";
 import { useRouter } from "next/navigation";
-import { KeyboardEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "./ui/command";
 import { File } from "lucide-react";
 
@@ -34,7 +34,7 @@ export const SearchCommand = () => {
 
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
-  }, [toggle]);
+  }, [toggle]); 
 
   const onSelect = (id: string) => {
     router.push(`/documents/${id}`);
