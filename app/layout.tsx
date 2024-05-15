@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Lotion",
-  description: "A Notion Clone",
+  description: "A Notion Clone created by Karan Yadav",
 };
 
 export default function RootLayout({
