@@ -32,8 +32,6 @@ const Editor: React.FC<EditorProps> = ({
   editable
 }: EditorProps) => {
 
-  const [blocks, setBlocks] = useState<Block[]>([]);
-
   const { resolvedTheme } = useTheme();
   const { edgestore } = useEdgeStore();
 
