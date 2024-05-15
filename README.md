@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lotion
+
+Lotion is a Notion clone, designed to provide users with a collaborative workspace for note-taking, task management, and document organization. Built on top of modern technologies, Lotion aims to replicate the core functionalities of Notion while offering a customizable and scalable solution.
+
+## Features
+
+- **Authentication**: Lotion employs Clerk library for seamless authentication, ensuring secure access control for users.
+- **Rich Text Editor**: Powered by BlockNote, Lotion offers a rich text editing experience, enabling users to format their notes and documents effortlessly.
+- **Database Integration**: Leveraging Convex, Lotion integrates with databases efficiently, facilitating data storage and retrieval.
+- **File Upload**: With Edgestore, Lotion supports file uploads, allowing users to attach files and media to their documents seamlessly.
+- **State Management**: Lotion utilizes Zustand for state management, providing a simple and efficient solution for managing application state.
+
+## Technologies Used
+
+- **Frontend**:
+  - Next.js (React): Next.js provides a robust foundation for building React applications with server-side rendering and efficient routing.
+  - Shadcn & Tailwind: Shadcn enhances the design aesthetics with its theming capabilities, while Tailwind CSS offers a utility-first approach for styling components.
+
+- **Backend**:
+  - Clerk: Clerk library handles authentication and user management with ease, ensuring a secure login experience.
+  - BlockNote: BlockNote powers the rich text editing capabilities, enabling users to create and format content intuitively.
+  - Convex: Convex facilitates seamless integration with databases, allowing efficient storage and retrieval of data.
+  - Edgestore: Edgestore handles file uploads, providing users with the ability to attach files and media to their documents.
+
+- **State Management**:
+  - Zustand: Zustand is utilized for state management in Lotion, offering a simple and efficient solution for managing application state.
 
 ## Getting Started
 
-First, run the development server:
+To get started with Lotion, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone the repository: `git clone https://github.com/yourusername/lotion.git`
+2. Install dependencies: `npm install`
+3. Configure environment variables for Clerk, Convex, and Edgestore.
+4. Start the development server: `npm run dev`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
